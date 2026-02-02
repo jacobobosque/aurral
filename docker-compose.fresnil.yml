@@ -14,7 +14,7 @@ services:
       - DEBUG=${DEBUG:-false}
       - AUTH_PASSWORD=${AUTH_PASSWORD}
     volumes:
-      - ./backend/data:/app/data
+      - /mnt/appdata/aurral:/app/data
     security_opt:
       - no-new-privileges:true
     cap_drop:
